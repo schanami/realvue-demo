@@ -1,0 +1,51 @@
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+
+<script type="text/javascript">
+
+	var elementInViewport = function(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+            rect.top >= 0 && rect.left >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight || rect.height) && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight || rect.height))
+    };
+    window.addEventListener("scroll", function(){
+    	var leaderboard = document.getElementById("div-gpt-ad-123456789-0");
+    	if(elementInViewport(leaderboard)){
+			googletag.cmd.push(function() {
+    			googletag.display("div-gpt-ad-123456789-0");
+    		});
+    	}
+    });
+
+</script>
+
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    var rez = top1.realvu_boost.addUnitById({
+            partner_id: 'E0TL', unit_id: 'div-gpt-ad-123456789-0', size: '300x250' });
+
+    googletag.defineSlot('/4216/ami.neq', [300, 250], 'div-gpt-ad-123456789-0').addService(googletag.pubads()).setTargeting("realvu","rez");
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script src='http://ac.realvu.net/realvu_boost.js' ></script>
+<h1>Lazy loaded ad 1200px with realvue</h1>
+<div style="height:1200px"></div>
+
+<!-- /4216/ami.neq -->
+<div id='div-gpt-ad-123456789-0' style='height:250px; width:300px;border:solid green 1px'>
+<script type='text/javascript'>
+</div>
