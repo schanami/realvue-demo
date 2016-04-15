@@ -689,7 +689,7 @@ init: function(targeting, done) {
                         //gptAdSlot.setTargeting('realvu', r.realvu);
                         ami.mensfitness.ads.slots["dfp-ad-top_728x90"].setTargeting('realvu',r.realvu);
                         
-                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-top_728x90"]],{changeCorrelator: getParameterByName("correlator")});
+                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-top_728x90"]],{changeCorrelator: Boolean(getParameterByName("correlator")) });
                     }
                     //, mode: 'in-view'
                     , mode: 'tx2'
@@ -729,7 +729,7 @@ init: function(targeting, done) {
                         //gptAdSlot.setTargeting('realvu', r.realvu);
                         ami.mensfitness.ads.slots["dfp-ad-right1_300x250"].setTargeting('realvu',r.realvu);
                         
-                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-right1_300x250"]],{changeCorrelator: getParameterByName("correlator")});
+                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-right1_300x250"]],{changeCorrelator: Boolean(getParameterByName("correlator")) });
                     }
                     //, mode: 'in-view'
                     , mode: 'tx2'
@@ -768,7 +768,7 @@ init: function(targeting, done) {
                         //gptAdSlot.setTargeting('realvu', r.realvu);
                         ami.mensfitness.ads.slots["dfp-ad-right2_300x250"].setTargeting('realvu',r.realvu);
                         
-                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-right2_300x250"]],{changeCorrelator: getParameterByName("correlator")});
+                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-right2_300x250"]],{changeCorrelator: Boolean(getParameterByName("correlator")) });
                     }
                     , mode: 'tx2'
                 });
