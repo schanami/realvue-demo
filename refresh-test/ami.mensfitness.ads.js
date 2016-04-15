@@ -19,11 +19,6 @@ if (ads_targeting["s2"]) {
     adUnit = "/" + ads_targeting["s1"];
 }
 
-function getParameterByName(name) {
-    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-}
-
 ami.mensfitness.ads = (function() {
     return {
         slots: {},
@@ -689,7 +684,7 @@ init: function(targeting, done) {
                         //gptAdSlot.setTargeting('realvu', r.realvu);
                         ami.mensfitness.ads.slots["dfp-ad-top_728x90"].setTargeting('realvu',r.realvu);
                         
-                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-top_728x90"]],{changeCorrelator: Boolean(getParameterByName("correlator")) });
+                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-top_728x90"]],{changeCorrelator: true });
                     }
                     //, mode: 'in-view'
                     , mode: 'tx2'
@@ -729,7 +724,7 @@ init: function(targeting, done) {
                         //gptAdSlot.setTargeting('realvu', r.realvu);
                         ami.mensfitness.ads.slots["dfp-ad-right1_300x250"].setTargeting('realvu',r.realvu);
                         
-                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-right1_300x250"]],{changeCorrelator: Boolean(getParameterByName("correlator")) });
+                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-right1_300x250"]],{changeCorrelator: true });
                     }
                     //, mode: 'in-view'
                     , mode: 'tx2'
@@ -768,7 +763,7 @@ init: function(targeting, done) {
                         //gptAdSlot.setTargeting('realvu', r.realvu);
                         ami.mensfitness.ads.slots["dfp-ad-right2_300x250"].setTargeting('realvu',r.realvu);
                         
-                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-right2_300x250"]],{changeCorrelator: Boolean(getParameterByName("correlator")) });
+                        googletag.pubads().refresh([ami.mensfitness.ads.slots["dfp-ad-right2_300x250"]],{changeCorrelator: true });
                     }
                     , mode: 'tx2'
                 });
